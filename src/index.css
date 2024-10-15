@@ -24,6 +24,7 @@ body{
   align-items: center;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 9999;
 }
 
 .navbar .nav-items a{
@@ -398,4 +399,57 @@ align-items: center;
 
 .about-me{
   text-align: justify;
+}
+
+.emtech-alert{
+  position: fixed;
+  width: 420px;
+  z-index: 999;
+}
+
+.e-alert {
+  background: rgba(152, 245, 238, 0.8) !important; 
+  backdrop-filter: blur(1px); 
+  border-radius: 0px 8px 8px 0px !important; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mini-text p{
+  margin: 0px !important;
+}
+
+.mini-logo{
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background: navy;
+  border: 5px solid black;
+}
+
+.project-pop{
+  width: 100% !important;
+  height: 600px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.img-pop{
+  width: 100%;
+  height: 50% !important;
+  margin-bottom: 30px;
+}
+
+.modal-body{
+  height: 60%;
+}
+
+.main-card img{
+  height: 200px !important;
 }

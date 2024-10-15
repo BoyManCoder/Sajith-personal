@@ -1,95 +1,93 @@
+import { Gallery } from "react-grid-gallery";
+
+const images = [
+    {
+        src: "https://via.placeholder.com/400x300",
+        width: 400,
+        height: 300,
+        caption: "Project 1: A description of the project or artwork.",
+    },
+    {
+        src: "https://via.placeholder.com/300x400",
+        width: 300,
+        height: 400,
+        caption: "Project 2: A description of the project or artwork.",
+    },
+    {
+        src: "https://via.placeholder.com/500x300",
+        width: 500,
+        height: 300,
+        caption: "Project 3: A description of the project or artwork.",
+    },
+    {
+        src: "https://via.placeholder.com/400x400",
+        width: 400,
+        height: 400,
+        caption: "Project 4: A description of the project or artwork.",
+    },
+    {
+        src: "https://via.placeholder.com/300x500",
+        width: 300,
+        height: 500,
+        caption: "Project 5: A description of the project or artwork.",
+    },
+    {
+        src: "https://via.placeholder.com/600x400",
+        width: 600,
+        height: 400,
+        caption: "Project 6: A description of the project or artwork.",
+    },
+    {
+      src: "https://via.placeholder.com/400x300",
+      width: 400,
+      height: 300,
+      caption: "Project 1: A description of the project or artwork.",
+  },
+  {
+      src: "https://via.placeholder.com/300x400",
+      width: 300,
+      height: 400,
+      caption: "Project 2: A description of the project or artwork.",
+  },
+  {
+      src: "https://via.placeholder.com/500x300",
+      width: 500,
+      height: 300,
+      caption: "Project 3: A description of the project or artwork.",
+  },
+  {
+      src: "https://via.placeholder.com/400x400",
+      width: 400,
+      height: 400,
+      caption: "Project 4: A description of the project or artwork.",
+  },
+  {
+      src: "https://via.placeholder.com/300x500",
+      width: 300,
+      height: 500,
+      caption: "Project 5: A description of the project or artwork.",
+  },
+  {
+      src: "https://via.placeholder.com/600x400",
+      width: 600,
+      height: 400,
+      caption: "Project 6: A description of the project or artwork.",
+  },
+  {
+    src: "https://via.placeholder.com/600x400",
+    width: 620,
+    height: 400,
+    caption: "Project 6: A description of the project or artwork.",
+},
+];
+
 function ImageGallery() {
     return (
-      <div className="container mt-5">
-        <h2>Portfolio Gallery</h2>
-        <div className="row">
-          <div className="col-lg-4 col-md-6 mb-4">
-            <div className="card">
-              <img
-                src="https://via.placeholder.com/400"
-                className="card-img-top"
-                alt="Project 1"
-              />
-              <div className="card-body">
-                <h5 className="card-title">Project 1</h5>
-                <p className="card-text">A description of the project or artwork.</p>
-              </div>
-            </div>
-          </div>
-  
-          <div className="col-lg-4 col-md-6 mb-4">
-            <div className="card">
-              <img
-                src="https://via.placeholder.com/400"
-                className="card-img-top"
-                alt="Project 2"
-              />
-              <div className="card-body">
-                <h5 className="card-title">Project 2</h5>
-                <p className="card-text">A description of the project or artwork.</p>
-              </div>
-            </div>
-          </div>
-  
-          <div className="col-lg-4 col-md-6 mb-4">
-            <div className="card">
-              <img
-                src="https://via.placeholder.com/400"
-                className="card-img-top"
-                alt="Project 3"
-              />
-              <div className="card-body">
-                <h5 className="card-title">Project 3</h5>
-                <p className="card-text">A description of the project or artwork.</p>
-              </div>
-            </div>
-          </div>
-  
-          <div className="col-lg-4 col-md-6 mb-4">
-            <div className="card">
-              <img
-                src="https://via.placeholder.com/400"
-                className="card-img-top"
-                alt="Project 4"
-              />
-              <div className="card-body">
-                <h5 className="card-title">Project 4</h5>
-                <p className="card-text">A description of the project or artwork.</p>
-              </div>
-            </div>
-          </div>
-  
-          <div className="col-lg-4 col-md-6 mb-4">
-            <div className="card">
-              <img
-                src="https://via.placeholder.com/400"
-                className="card-img-top"
-                alt="Project 5"
-              />
-              <div className="card-body">
-                <h5 className="card-title">Project 5</h5>
-                <p className="card-text">A description of the project or artwork.</p>
-              </div>
-            </div>
-          </div>
-  
-          <div className="col-lg-4 col-md-6 mb-4">
-            <div className="card">
-              <img
-                src="https://via.placeholder.com/400"
-                className="card-img-top"
-                alt="Project 6"
-              />
-              <div className="card-body">
-                <h5 className="card-title">Project 6</h5>
-                <p className="card-text">A description of the project or artwork.</p>
-              </div>
-            </div>
-          </div>
+        <div className="container mt-5">
+            <h2>Portfolio Gallery</h2>
+            <Gallery images={images} />
         </div>
-      </div>
     );
-  }
-  
-  export default ImageGallery;
-  
+}
+
+export default ImageGallery;

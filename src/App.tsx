@@ -6,11 +6,13 @@ import Projects from './components/Projects'
 import Contacts from './components/Contacts'
 import ImageGallery from './components/ImageGallery'
 import Footer from './components/Footer'
+import EmTechBrand from './components/EmTechBrand'
 
 function App() {
   return (
     <>
     <NavBar/>
+    <EmTechBrand/>
     <HomeGrid/>
     <Education/>
     <Projects/>

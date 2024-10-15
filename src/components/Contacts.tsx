@@ -7,8 +7,8 @@ function Contacts() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const halfPageHeight = 700;
-      const fadeOutPoint = halfPageHeight + 1000; // Adjust this value as needed
+      const halfPageHeight = 1400;
+      const fadeOutPoint = halfPageHeight + 500; // Adjust this value as needed
 
       setHasScrolledHalf(scrollPosition >= halfPageHeight);
       setShouldFadeOut(scrollPosition >= fadeOutPoint);
