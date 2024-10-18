@@ -1,18 +1,41 @@
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
+import { useState } from "react";
 
 function NavBar() {
+    const [expanded, setExpanded] = useState(false);
+
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light" expand="md" expanded={expanded}>
             <Container>
                 <Navbar.Brand href="#">FIRST NAME</Navbar.Brand>
-                <Navbar.Toggle aria-controls="navbar-nav" />
-                <Navbar.Collapse id="navbar-nav">
+                <Navbar.Toggle 
+                    aria-controls="navbar-nav" 
+                    onClick={() => setExpanded(prev => !prev)}
+                />
+                <Navbar.Collapse 
+                    id="navbar-nav" 
+                    className={expanded ? 'collapse-padding' : ''}
+                >
                     <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#projects">Projects</Nav.Link>
-                        <Nav.Link href="#experience">Experience</Nav.Link>
+                        <div className="navCol">
+                            <Nav.Link href="#home">Education</Nav.Link>
+                            <div className="navSocial d-md-none"> {/* Show only on small screens */}
+                                {expanded && <Button>Github</Button>}
+                            </div>
+                        </div>
+                        <div className="navCol">
+                            <Nav.Link href="#home">Projects</Nav.Link>
+                            <div className="navSocial d-md-none"> {/* Show only on small screens */}
+                                {expanded && <Button>Email</Button>}
+                            </div>
+                        </div>
+                        <div className="navCol">
+                            <Nav.Link href="#home">Gallery</Nav.Link>
+                            <div className="navSocial d-md-none"> {/* Show only on small screens */}
+                                {expanded && <Button>Instagram</Button>}
+                            </div>
+                        </div>
                     </Nav>
-                    <Button variant="outline-primary">Contact</Button>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

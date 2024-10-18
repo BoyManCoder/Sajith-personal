@@ -453,3 +453,39 @@ align-items: center;
 .main-card img{
   height: 200px !important;
 }
+
+.navbar-collapse{
+  border-radius: 0px 0px 20px 20px;
+  background: #f8f9fa;
+  transition: 1s ease;
+}
+
+.navCol{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar-nav .nav-link{
+  text-decoration: underline !important;
+}
+
+.collapse-padding {
+  margin: 20px;
+  padding: 10px;
+  width: 50% !important;
+  transition: all 1s ease;
+}
+
+.emtech-alert {
+  position: fixed;
+  top: 20px; /* Adjust as needed */
+  left: -100%; /* Initially off-screen */
+  transition: left 1s ease; /* Animation duration */
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+.slide-in {
+  left: 0px; /* Final position when sliding in */
+}
