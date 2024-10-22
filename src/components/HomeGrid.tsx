@@ -47,7 +47,7 @@ function HomeGrid() {
         {
             name: "Website",
             desc: "This was a website",
-            src: "",
+            src: "https://via.placeholder.com/200",
         },
         {
             name: "Club",
